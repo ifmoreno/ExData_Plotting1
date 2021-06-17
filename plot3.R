@@ -1,5 +1,9 @@
 datos <- readRDS(file = "datos.rds")
 
+datos$Sub_metering_1 <- as.numeric(datos$Sub_metering_1)
+datos$Sub_metering_2 <- as.numeric(datos$Sub_metering_2)
+datos$Sub_metering_3 <- as.numeric(datos$Sub_metering_3)
+
 png("plot3.png",
     width = 480, height = 480,
     units = "px")
